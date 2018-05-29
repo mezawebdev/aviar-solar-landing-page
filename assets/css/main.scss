@@ -19,6 +19,7 @@
 }
 
 $primary-color: #FFCE07;
+$secondary-color: #2E3094;
 
 body {
 	overflow-x: hidden;
@@ -60,6 +61,10 @@ body {
 	margin-top: 10px;
 }
 
+.noUi-connect {
+	background: $secondary-color !important;
+}
+
 .noUi-handle {
 	border-radius: 100px !important;
 	border: 1px solid rgb(175, 175, 175) !important;
@@ -74,6 +79,24 @@ body {
 //-----------------------------
 // Small Devices 0px -> 480px
 //-----------------------------
+.page {
+	display: none;
+	opacity: 0;
+	transition: opacity 0.50s ease-in-out;
+	-moz-transition: opacity 0.50s ease-in-out;
+	-webkit-transition: opacity 0.50s ease-in-out;
+	-o-transition: opacity 0.50s ease-in-out;
+}
+
+
+.page.active {
+	display: block;
+}
+
+.page.visible {
+	opacity: 1;
+}
+
 // Global
 .section {
 	padding-top: 50px;
@@ -285,6 +308,7 @@ body {
 	}
 }
 
+// Section 5
 #section-5 {
 	button {
 		width: 280px;
@@ -304,8 +328,27 @@ body {
 		text-align: center;
 		box-shadow: 0px 4px 10px rgba(0 , 0, 0, 0.7);
 		font-weight: bold;
+		transition: transform 0.25s ease-in-out;
+		-moz-transition: transform 0.25s ease-in-out;
+		-o-transition: transform 0.25s ease-in-out;
+		-webkit-transition: transform 0.25s ease-in-out;
+	}
+
+	button:active {
+		transform: scale(0.9);
+		-moz-transform: scale(0.9);
+		-webkit-transform: scale(0.9);
+		-o-transform: scale(0.9);
+	}
+
+	button:hover {
+		transform: scale(1.1);
+		-moz-transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		-o-transform: scale(1.1);
 	}
 }
+// ---------------------------
 
 footer {
 	margin-top: 50px;
