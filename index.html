@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<title>Solar Experts</title>
+	<title>San Diego County Solar Experts</title>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge />">
 	<meta http-equiv="content-type" content="text/html" charset="utf-8"/>
@@ -10,74 +10,254 @@
 	<meta name="keywords" content="HTML, CSS, JavaScript, jQuery, jQueryUI, Bootstrap" />
 	<meta name="prototype" content="0" />
 	<meta name="date" content="" />
-	<meta name="description" content="" />
+	<meta name="description" content="San Diego County Solar Experts" />
+	<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+	<link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+	<!-- <link rel="manifest" href="/manifest.json"> -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="assets/css/nouislider.min.css" />
 	<link rel="stylesheet" href="assets/css/animate.css">
+
 </head>
 <body>
+	<div id="background">
+		<div id="background-overlay">
+		</div>
+	</div>
+
 	<!-- Navigation -->
 	<div id="navigation">
 		<div class="container">
-			<div class="row">
-				<a href="#">
-					<img src="assets/images/aviara-logo.png" />
+			<div style="white-space: nowrap;" class="row">
+				<a href="./">
+					<img src="assets/images/logo-1
+					.png"/>
 				</a>
 				<div class="menu">
 					<button><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+					<p><a href="./">Solar Contracting</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="./">Contact</a></p>
+					<div class="menu-collapse">
+						<ul>
+							<li><a href="./">Solar Contracting</a></li>
+							<li><a href="./">Contact</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!--  -->
 
-	<!-- Section 0 -->
-	<div id="section-0">
-		<div class="overlay"></div>
-		<div class="section-0-content">
-			<div class="container">
-				<div class="section-0-header">
-					<h1><span>California Homeowners:</span><br />
-						Find Out How 11 Seconds Could Save<br />
-						You Hundreds On Your Energy Bill
-					</h1>
-					<button id="btn-0">CALCULATE YOUR SAVINGS</button>
+	<div id="app">
+		<!-- Page 0 -->
+		<div id="page-0" class="page">
+			<div id="section-0">
+				<div class="section-0-content">
+					<div class="container">
+						<div class="section-0-header">
+							<h1><span><strong>California Homeowners:</strong></span>
+								Find Out How 11 Seconds Could Save<br />
+								You Hundreds On Your Energy Bill
+							</h1>
+							<button id="btn-0">CALCULATE YOUR SAVINGS</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!--  -->
+		<!--  -->
 
-	<!-- Page 0 -->
-	<div id="page-0" class="page">
-		<!-- Section 1 -->
-		<div id="section-1" class="section">
-			<div class="container">
-				<div class="step-number">
-					<span>1</span>
+		<!-- Page 1 - Electricity Bill -->
+		<div id="page-1" class="page padding-top">
+			<div class="wrapper">
+				<div class="content">
+					<span class="step-number">1</span>
+					<div class="divider-sm"></div>
+					<h1>Select Your Average Electricity Bill</h1>
+					<div id="electricity-slider">
+
+					</div>
+					<button class="select-btn">SELECT</button>
 				</div>
-				<div class="section-title">
-					<h2>SELECT YOUR PROPERTY TYPE</h2>
+			</div>
+		</div>
+		<!--  -->
+
+		<!-- Page 2 - Property Type -->
+		<div id="page-2" class="page padding-top">
+			<div class="wrapper">
+				<div class="error">
+					<p><span class="glyphicon glyphicon-exclamation-sign"></span>&nbsp;Please select your property type.</p>
 				</div>
-				<div class="section-content">
-					<div class="row">
-						<div class="col-sm-4">
-							<div id="property-type-0" class="option">
-								<img src="assets/images/property-0.png" />
-								<p>HOUSE</p>
+				<div class="content">
+					<span class="step-number">2</span>
+					<div class="divider-sm"></div>
+					<h1>Select Your Property Type</h1>
+					<div class="options">
+						<div class="row">
+							<div class="col-xs-6 option" id="option-house">
+								<div class="option-image"></div>
+								<p class="option-name">HOUSE</p>
+							</div>
+							<div class="col-xs-6 option" id="option-commercial">
+								<div class="option-image"></div>
+								<p class="option-name">COMMERCIAL</p>
 							</div>
 						</div>
-						<div class="col-sm-4">
-							<div id="property-type-1" class="option">
-								<img src="assets/images/property-1.png" />
-								<p>COMMERCIAL</p>
+						<br />
+						<div class="row">
+							<div class="col-xs-12 option" id="option-institutional">
+								<div class="option-image"></div>
+								<p class="option-name">INSTITUTIONAL</p>
 							</div>
 						</div>
-						<div class="col-sm-4">
-							<div id="property-type-2" class="option">
-								<img src="assets/images/property-2.png" />
-								<p>INSTITUTIONAL</p>
+					</div>
+					<!-- <button class="select-btn">SELECT</button> -->
+				</div>
+			</div>
+		</div>
+		<!--  -->
+
+		<!-- Page 3 - Roof Type -->
+		<div id="page-3" class="page padding-top">
+			<div class="wrapper">
+				<div class="error">
+					<p><span class="glyphicon glyphicon-exclamation-sign"></span>&nbsp;Please select your roof type.</p>
+				</div>
+				<div class="content">
+					<span class="step-number">3</span>
+					<div class="divider-sm"></div>
+					<h1>Select Your Roof Type</h1>
+					<div class="options">
+						<div class="row">
+							<div class="col-xs-6 option" id="option-composition">
+								<div class="option-image"></div>
+								<p class="option-name">COMPOSITION</p>
+							</div>
+							<div class="col-xs-6 option" id="option-tile">
+								<div class="option-image"></div>
+								<p class="option-name">TILE</p>
+							</div>
+						</div>
+						<br />
+						<div class="row">
+							<div class="col-xs-6 option" id="option-clay">
+								<div class="option-image"></div>
+								<p class="option-name">CLAY</p>
+							</div>
+							<div class="col-xs-6 option" id="option-flat">
+								<div class="option-image"></div>
+								<p class="option-name">FLAT/OTHER</p>
+							</div>
+						</div>
+					</div>
+					<!-- <button class="select-btn">SELECT</button> -->
+				</div>
+			</div>
+		</div>
+		<!--  -->
+
+		<!-- Page 4 - Address -->
+		<div id="page-4" class="page padding-top">
+			<div class="wrapper">
+				<div class="error">
+					<p><span class="glyphicon glyphicon-exclamation-sign"></span>&nbsp;Please Select Your Address.</p>
+				</div>
+				<div class="content">
+					<span class="step-number">4</span>
+					<div class="divider-sm"></div>
+					<h1>What's Your Address?</h1>
+
+					<form>
+						<div class="address-form">
+							<input type="text" id="autocomplete" placeholder="Your Address" />
+						</div>
+
+						<button class="select-btn">SELECT</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--  -->
+
+		<!-- Page 5 - Phone Number -->
+		<div id="page-5" class="page padding-top">
+			<div class="wrapper">
+				<div class="error">
+					<p><span class="glyphicon glyphicon-exclamation-sign"></span>&nbsp;Please Check Your Information.</p>
+				</div>
+				<div class="content">
+					<span class="step-number">5</span>
+					<div class="divider-sm"></div>
+					<h1>Your Proposal Is Ready</h1>
+
+					<form>
+						<div class="form">
+							<input type="text" class="phone-number" placeholder="Your Phone Number" />
+							<input type="text" class="email" placeholder="Your E-mail Address" />
+						</div>
+						<button class="select-btn">SELECT</button>
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<!--  -->
+
+		<!-- Page 6 - Your Name -->
+		<div id="page-6" class="page padding-top">
+			<div class="wrapper">
+				<div class="loading-screen">
+					<div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+				</div>
+				<div class="error">
+					<p><span class="glyphicon glyphicon-exclamation-sign"></span>&nbsp;Please Type Your Full Name.</p>
+				</div>
+				<div class="content">
+					<span class="step-number">6</span>
+					<div class="divider-sm"></div>
+					<h1>Your Quote Is On Its Way!</h1>
+
+					<form>
+						<div class="form">
+							<input type="text" class="name" placeholder="Your Full Name" />
+							<button class="select-btn">SELECT</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--  -->
+
+		<!-- Page 7 - Thank you -->
+		<div id="page-7" class="page padding-top">
+			<div class="wrapper">
+				<div class="content">
+					<span class="step-number"><span class="glyphicon glyphicon-ok"></span></span>
+					<div class="divider-sm"></div>
+					<h1>Thank You For Your Interest in a Free Solar Quote!</h1>
+					<h4>We'll be calling shortly to share a personalized savings quote.</h4>
+					<div class="footer">
+						<div class="footer-content">
+							<p class="tagline">Here are the next steps to keep saving:</p>
+							<br />
+							<div class="row">
+								<div class="col-xs-4">
+									<img src="assets/images/bus-icon-0.png" />
+									<br />
+									<p class="quote-step"><strong>1.</strong> <span class="mobile">A solar specialist will call you.</span><span class="desktop">A solar specialist from our team will call you to verify your information.</span></p>
+								</div>
+								<div class="col-xs-4">
+									<img src="assets/images/bus-icon-1.png" />
+									<br />
+									<p class="quote-step"><strong>2.</strong> <span class="mobile">We match you with contractors.</span><span class="desktop">We then match you with top installers from our network.</span></p>
+								</div>
+								<div class="col-xs-4">
+									<img src="assets/images/bus-icon-2.png" />
+									<br />
+									<p class="quote-step"><strong>3.</strong> <span class="mobile">You will receive a free home visit.</span><span class="desktop">You will receive a free home visit to get more specific details on solar for your home.</span></p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -86,154 +266,22 @@
 		</div>
 		<!--  -->
 
-		<div class="container">
-			<div class="divider"></div>
-		</div>
-
-		<!-- Section 2 -->
-		<div id="section-2" class="section">
-			<div class="container">
-				<div class="step-number">
-					<span>2</span>
-				</div>
-				<div class="section-title">
-					<h2>SELECT YOUR ROOF TYPE</h2>
-				</div>
-				<div class="section-content">
-					<div class="row">
-						<div class="col-sm-3">
-							<div class="option" id="roof-type-0">
-								<img src="assets/images/roof-0.png" />
-								<p>TILE</p>
-							</div>
-						</div>
-						<div class="col-sm-3">
-							<div class="option" id="roof-type-1">
-								<img src="assets/images/roof-1.png" />
-								<p>COMPOSITION</p>
-							</div>
-						</div>
-						<div class="col-sm-3">
-							<div class="option" id="roof-type-2">
-								<img src="assets/images/roof-2.png" />
-								<p>OTHER</p>
-							</div>
-						</div>
-						<div class="col-sm-3">
-							<div class="option" id="roof-type-3">
-								<img src="assets/images/roof-3.png" />
-								<p>CLAY</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--  -->
-
-		<div class="container">
-			<div class="divider"></div>
-		</div>
-		<!--  -->
-
-		<!-- Section 3 -->
-		<div id="section-3" class="section">
-			<div class="container">
-				<div class="step-number">
-					<span>3</span>
-				</div>
-				<div class="section-title">
-					<h2>CHECK YOUR ADDRESS</h2>
-				</div>
-				<div class="section-content">
-					<div id="map">
-
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--  -->
-
-		<div class="container">
-			<div class="divider"></div>
-		</div>
-
-		<!-- Section 4 -->
-		<div id="section-4" class="section">
-			<div class="container">
-				<div class="step-number">
-					<span>4</span>
-				</div>
-				<div class="section-title">
-					<h2>YOUR AVERAGE ELECTRICITY BILL</h2>
-				</div>
-				<div class="section-content">
-					<div id="electricity-slider"></div>
-				</div>
-			</div>
-		</div>
-		<!--  -->
-
-		<!-- Section 5 -->
-		<div id="section-5" class="section">
-			<button id="calculate-savings-btn">CALCULATE YOUR SAVINGS</button>
-		</div>
-		<!--  -->
 	</div>
-	<!--  -->
-
-	<!-- Page 1 -->
-	<div id="page-1" class="page">
-		<!-- Section 6 -->
-		<div id="section-6" class="section">
-			<div class="container">
-				<div class="step-number">
-					<span>6</span>
-				</div>
-				<div class="section-title">
-					<h2>YOUR PROPOSAL IS READY</h2>
-				</div>
-				<div class="section-content">
-					
-				</div>
-			</div>
-		</div>
-		<!--  -->
-
-		<div class="container">
-			<div class="divider"></div>
-		</div>
-
-		<!-- Section 7 -->
-		<div id="section-7" class="section">
-			<div class="container">
-				<div class="step-number">
-					<span>7</span>
-				</div>
-				<div class="section-title">
-					<h2>GET A QUOTE</h2>
-				</div>
-				<div class="section-content">
-					
-				</div>
-			</div>
-		</div>
-		<!--  -->
-	</div>
-	<!--  -->
+	
 
 	<!-- Footer -->
 	<footer class="section">
 		<div class="container">
+			<img src="assets/images/logo-0.png" />
 			<div class="footer-menu">
 				<ul>
-					<li>Welcome</li>
-					<li>Contact</li>
-					<li>Privacy Policy</li>
+					<li><a href="./">Welcome</a></li>
+					<li><a href="./">Contact</a></li>
+					<li><a href="./">Privacy Policy</a></li>
 				</ul>
 			</div>
 			<br /><br />
-			<p>COPYRIGHT © 2018 ALL RIGHTS RESERVED. | AVIARA SOLAR CONTRACTORS</p>
+			<p>COPYRIGHT © 2018 ALL RIGHTS RESERVED.</p>
 		</div>
 	</footer>
 	<!--  -->
@@ -242,73 +290,72 @@
 	<script src="assets/js/jquery-ui.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/jquery.vide.min.js"></script>
-	<script>
+	 <script>
+      // This example displays an address form, using the autocomplete feature
+      // of the Google Places API to help users fill in the information.
+
+      // This example requires the Places library. Include the libraries=places
+      // parameter when you first load the API. For example:
+      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+
+      var placeSearch, autocomplete;
+      var componentForm = {
+        street_number: 'short_name',
+        route: 'long_name',
+        locality: 'long_name',
+        administrative_area_level_1: 'short_name',
+        country: 'long_name',
+        postal_code: 'short_name'
+      };
+
       function initAutocomplete() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -33.8688, lng: 151.2195},
-          zoom: 13,
-          mapTypeId: 'roadmap',
-          disableDefaultUI: false
-        });
+        // Create the autocomplete object, restricting the search to geographical
+        // location types.
+        autocomplete = new google.maps.places.Autocomplete(
+            /** @type {!HTMLInputElement} */(document.getElementById('autocomplete')),
+            {types: ['geocode']});
 
-        // Create the search box and link it to the UI element.
-        var input = document.getElementById('pac-input');
-        var searchBox = new google.maps.places.SearchBox(input);
-        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+        // When the user selects an address from the dropdown, populate the address
+        // fields in the form.
+        autocomplete.addListener('place_changed', getAddress);
+      }
 
-        // Bias the SearchBox results towards current map's viewport.
-        map.addListener('bounds_changed', function() {
-          searchBox.setBounds(map.getBounds());
-        });
+      function fillInAddress() {
+        // Get the place details from the autocomplete object.
+        var place = autocomplete.getPlace();
 
-        var markers = [];
-        // Listen for the event fired when the user selects a prediction and retrieve
-        // more details for that place.
-        searchBox.addListener('places_changed', function() {
-          var places = searchBox.getPlaces();
+        for (var component in componentForm) {
+          document.getElementById(component).value = '';
+          document.getElementById(component).disabled = false;
+        }
 
-          if (places.length == 0) {
-            return;
+        // Get each component of the address from the place details
+        // and fill the corresponding field on the form.
+        for (var i = 0; i < place.address_components.length; i++) {
+          var addressType = place.address_components[i].types[0];
+          if (componentForm[addressType]) {
+            var val = place.address_components[i][componentForm[addressType]];
+            document.getElementById(addressType).value = val;
           }
+        }
+      }
 
-          // Clear out the old markers.
-          markers.forEach(function(marker) {
-            marker.setMap(null);
-          });
-          markers = [];
-
-          // For each place, get the icon, name and location.
-          var bounds = new google.maps.LatLngBounds();
-          places.forEach(function(place) {
-            if (!place.geometry) {
-              console.log("Returned place contains no geometry");
-              return;
-            }
-            var icon = {
-              url: place.icon,
-              size: new google.maps.Size(71, 71),
-              origin: new google.maps.Point(0, 0),
-              anchor: new google.maps.Point(17, 34),
-              scaledSize: new google.maps.Size(25, 25)
+      // Bias the autocomplete object to the user's geographical location,
+      // as supplied by the browser's 'navigator.geolocation' object.
+      function geolocate() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var geolocation = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
             };
-
-            // Create a marker for each place.
-            markers.push(new google.maps.Marker({
-              map: map,
-              icon: icon,
-              title: place.name,
-              position: place.geometry.location
-            }));
-
-            if (place.geometry.viewport) {
-              // Only geocodes have viewport.
-              bounds.union(place.geometry.viewport);
-            } else {
-              bounds.extend(place.geometry.location);
-            }
+            var circle = new google.maps.Circle({
+              center: geolocation,
+              radius: position.coords.accuracy
+            });
+            autocomplete.setBounds(circle.getBounds());
           });
-          map.fitBounds(bounds);
-        });
+        }
       }
     </script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzWxtVw_7GpjYebX4oqfzhGRhGS7m9TZ4&libraries=places&callback=initAutocomplete"
